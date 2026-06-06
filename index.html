@@ -1,0 +1,38 @@
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="index.css" />
+    </head>
+    <body>
+       <div style="text-align: center;">
+    <h1><u><b>AnimalSearch</b></u></h1>
+</div>
+        <div style="text-align: center;">
+    <h2>Search a type of dog to get information about it.</h2>
+</div>
+    </body>
+</html>
+<div style="text-align: center;">
+    <form onsubmit="rechercher(); return false;">
+        <input type="text" id="search" placeholder="Search for an animal ...">
+        <button type="submit">Search</button>
+    </form>
+</div>
+
+<script>
+function rechercher() {
+    let texte = document.getElementById("search").value.toLowerCase().trim();
+
+    if (texte === "berger allemand") {
+        window.location.href = "berger-allemand.html";
+    }
+    else if (texte === "golden retriever") {
+        window.location.href = "golden-retriever.html";
+    }
+    else if (texte === "Chihuahua") {
+        window.location.href = "Chihuahua.html";
+    }
+    else {
+        window.location.href = "Not-found.html";
+    }
+}
+</script>

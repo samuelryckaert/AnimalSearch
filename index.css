@@ -1,0 +1,28 @@
+input[type="text"] {
+    padding: 10px;
+    border: 2px solid #ccc;
+    border-radius: 20px;
+    width: 250px;
+    font-size: 16px;
+}
+
+button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 20px;
+    background-color: #000000;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+.home-btn {
+    background-color: rgb(0, 0, 0);
+    color: white;
+    border: none;
+    border-radius: 20px;
+    padding: 10px 20px;
+}
